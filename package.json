@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Rodri-A-DK.github.io/portfolio1",
   "name": "curso-astro",
   "type": "module",
   "version": "0.0.1",
@@ -7,7 +8,9 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -17,6 +20,10 @@
     "swiper": "^11.1.15",
     "tailwindcss": "^3.4.7",
     "three": "^0.171.0",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "vite": "^6.0.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
